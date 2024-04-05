@@ -2,7 +2,6 @@ import { navigationData } from "@/constants";
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
-import { Button } from "./ui/button";
 
 const Header = () => {
   const pathname = useLocation();
@@ -26,14 +25,14 @@ const Header = () => {
   };
 
   return (
-    <div className="flex justify-between py-1">
+    <div className="flex justify-between ">
       <div
-        className={`fixed top-0 left-0 py-1 w-full border-b border-b-yellow-400
-      lg:backdrop-blur-sm `}
+        className={`fixed  backdrop-blur-md top-0 left-0  w-full border-b border-opacity-20 border-b-yellow-400
+      lg:py-1 lg:backdrop-blur-sm `}
       >
-        <div className="px-5 lg:px-8 xl:px-10 max-lg:py-4">
-          <a className="block xl:mr-8" href="#hero">
-            Travelling nemo
+        <div className="px-5  lg:px-8 xl:px-10 max-lg:py-4">
+          <a className="block text-2xl font-thin  xl:mr-8" href="#hero">
+            Travelling <span className="text-yellow-500 font-normal">NEMO</span>
           </a>
         </div>
       </div>
@@ -58,10 +57,17 @@ const Header = () => {
           ))}
         </div>
       </nav>
-      <div href="#account" className="z-20 mr-6">
+      <SmallDevicesMenu
+        onClick={toggleNavigation}
+        openNavigation={openNavigation}
+      />
+      <div
+        href="#account"
+        className=" hidden z-20 mr-6 cursor-pointer lg:block "
+      >
         {/* TODO:account info */}
         <img
-          src="/public/assets/profile/default-user.jpg"
+          src="/src/assets/profile/default-user.jpg"
           alt="ac"
           width={24}
           height={24}
@@ -72,3 +78,26 @@ const Header = () => {
 };
 
 export default Header;
+
+const SmallDevicesMenu = ({ onClick, openNavigation }) => {
+  return (
+    <div
+      className={`absolute top-6 right-14  lg:hidden cursor-pointer 
+      ${openNavigation ? " -mt-2" : ""}`}
+      onClick={onClick}
+    >
+      <div
+        className={`fixed border border-yellow-500 w-10 
+      transition-all ${openNavigation ? "rotate-45 mt-4" : ""} `}
+      />
+      <div
+        className={`fixed border border-yellow-500 w-10  mt-2 
+       transition-all ${openNavigation ? "hidden" : ""}`}
+      />
+      <div
+        className={`fixed border border-yellow-500 w-10  mt-4
+       transition-all ${openNavigation ? "-rotate-45 mt-2" : ""}`}
+      />
+    </div>
+  );
+};

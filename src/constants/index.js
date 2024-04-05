@@ -54,7 +54,7 @@ export const upcomingTripDetails = [
   },
   {
     id: "3",
-    title: "Nepal",
+    title: "Kerala",
     startDate: "18.07.2024",
     returnDate: "21.07.2024",
     duration: "3 days",
@@ -161,5 +161,43 @@ export const travelQuality = [
     icon: "",
     title: "Find the right luggage",
     text: "Travel effortlessly with our selection of premium luggage solutions tailored to your journey. Discover the perfect blend of style and functionality to accompany you on every adventure.",
+  },
+];
+
+export const landingPageTitles = [
+  {
+    id: "1",
+    title: "Start Your Indian Odyssey Today",
+    text: "Ready to embark on the adventure of a lifetime? Explore our handcrafted itineraries, discover hidden gems, and let us help you plan the perfect trip to India. Whether you're a history buff, nature lover, foodie, or spiritual seeker, there's something for everyone in this enchanting land. Your journey to Incredible India begins here!",
+  },
+  {
+    id: "2",
+    title: "Reconnect with Your Roots",
+    text: "Explore the rich tapestry of India's cultural heritage right in your own backyard. From ancient monuments to traditional festivals, there's no shortage of opportunities to immerse yourself in the vibrant tapestry of Indian culture. Rediscover the hidden gems of your own state or venture beyond to uncover the unique traditions and customs of different regions.",
+  },
+  {
+    id: "3",
+    title: "Taste the Flavors of India",
+    text: "Indulge your taste buds in the culinary delights of India's diverse cuisines. From street-side chaat to regional specialties, every corner of the country offers a gastronomic adventure waiting to be savored. Whether you're craving spicy street food or indulging in regional delicacies, let your palate guide you on a culinary journey across India.",
+  },
+  {
+    id: "4",
+    title: "Experience the Diversity of Nature",
+    text: "From the snow-capped peaks of the Himalayas to the sun-kissed beaches of the Andaman Islands, India boasts an unparalleled diversity of natural landscapes. Embark on scenic road trips, trek through pristine forests, or simply unwind amidst the tranquil beauty of nature. There's something for every nature enthusiast right here in our own backyard.",
+  },
+  {
+    id: "5",
+    title: "Find Serenity in Sacred Spaces",
+    text: "Seek solace and spiritual enlightenment in India's sacred destinations. Whether you're drawn to the peaceful serenity of ancient temples, the tranquil banks of holy rivers, or the serene surroundings of ashrams and meditation centers, India offers a multitude of opportunities for introspection and inner peace.",
+  },
+  {
+    id: "6",
+    title: "Travel Responsibly, Travel Sustainably",
+    text: "As responsible travelers and proud citizens of India, let's commit to preserving the natural beauty and cultural heritage of our country. Travel sustainably, support local communities, and leave a positive impact wherever you go. Together, let's protect and cherish the treasures of our homeland for generations to come.",
+  },
+  {
+    id: "7",
+    title: "Start Your Journey Today",
+    text: "Ready to embark on an adventure of a lifetime right here in India? Explore our curated itineraries, discover off-the-beaten-path destinations, and let us help you plan the perfect getaway. Whether you're seeking adventure, relaxation, or cultural immersion, your next great escape awaits in the heart of Incredible India.",
   },
 ];
