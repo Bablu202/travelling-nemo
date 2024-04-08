@@ -36,6 +36,7 @@ export const navigationData = [
 export const upcomingTripDetails = [
   {
     id: "1",
+    image: "/src/assets/trip/trip-1.jpg",
     title: "Nepal",
     startDate: "02.06.2024",
     returnDate: "06.06.2024",
@@ -45,6 +46,7 @@ export const upcomingTripDetails = [
   },
   {
     id: "2",
+    image: "/src/assets/trip/trip-1.jpg",
     title: "Lucknow",
     startDate: "02.06.2024",
     returnDate: "08.06.2024",
@@ -54,6 +56,7 @@ export const upcomingTripDetails = [
   },
   {
     id: "3",
+    image: "/src/assets/trip/trip-1.jpg",
     title: "Kerala",
     startDate: "18.07.2024",
     returnDate: "21.07.2024",
@@ -63,6 +66,7 @@ export const upcomingTripDetails = [
   },
   {
     id: "4",
+    image: "/src/assets/trip/trip-1.jpg",
     title: "Goa",
     startDate: "22.08.2024",
     returnDate: "25.08.2024",
@@ -136,29 +140,32 @@ export const faqs = [
       "When packing for a trip to India, it's important to consider the climate and activities you'll be doing. Essentials include lightweight clothing, comfortable shoes, sunscreen, insect repellent, a hat, sunglasses, and any necessary medications or toiletries.",
   },
 ];
-
+import { GrUserExpert } from "react-icons/gr";
+import { FaPersonWalkingLuggage } from "react-icons/fa6";
+import { BsLuggageFill } from "react-icons/bs";
+import { FaBed } from "react-icons/fa";
 export const travelQuality = [
   {
     id: "1",
-    icon: "",
+    icon: GrUserExpert,
     title: "Experts on Tour",
     text: "Discover the world with confidence alongside our team of seasoned tour experts. Guiding you through unforgettable experiences, our knowledgeable professionals ensure every moment is enriched with insight and expertise",
   },
   {
     id: "2",
-    icon: "",
+    icon: FaPersonWalkingLuggage,
     title: "Comfortable Transport",
     text: "Experience unparalleled comfort throughout your journey with our deluxe transportation services. From plush seating to attentive amenities, travel in style and relaxation.",
   },
   {
     id: "3",
-    icon: "",
+    icon: FaBed,
     title: "Qualitiy Accommodation",
     text: "Elevate your travel experience with our top-tier accommodations, meticulously curated to offer the utmost comfort and luxury. From boutique hotels to lavish resorts, indulge in unparalleled quality and relaxation during your stay.",
   },
   {
     id: "4",
-    icon: "",
+    icon: BsLuggageFill,
     title: "Find the right luggage",
     text: "Travel effortlessly with our selection of premium luggage solutions tailored to your journey. Discover the perfect blend of style and functionality to accompany you on every adventure.",
   },
@@ -200,4 +207,19 @@ export const landingPageTitles = [
     title: "Start Your Journey Today",
     text: "Ready to embark on an adventure of a lifetime right here in India? Explore our curated itineraries, discover off-the-beaten-path destinations, and let us help you plan the perfect getaway. Whether you're seeking adventure, relaxation, or cultural immersion, your next great escape awaits in the heart of Incredible India.",
   },
+];
+import { PiInstagramLogo } from "react-icons/pi";
+import { PiFacebookLogo } from "react-icons/pi";
+import { PiTwitterLogoLight } from "react-icons/pi";
+import { PiTwitchLogo } from "react-icons/pi";
+import { PiDiscordLogoLight } from "react-icons/pi";
+import { PiTelegramLogoLight } from "react-icons/pi";
+
+export const footerContent = [
+  { id: "1", logo: PiInstagramLogo, title: "", url: "", isText: false },
+  { id: "2", logo: PiTelegramLogoLight, title: "", url: "", isText: false },
+  { id: "3", logo: PiFacebookLogo, title: "", url: "", isText: false },
+  { id: "4", logo: PiTwitterLogoLight, title: "", url: "", isText: false },
+  { id: "5", logo: PiTwitchLogo, title: "", url: "", isText: false },
+  { id: "6", logo: PiDiscordLogoLight, title: "", url: "", isText: false },
 ];

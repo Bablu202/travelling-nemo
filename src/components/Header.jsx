@@ -25,28 +25,42 @@ const Header = () => {
   };
 
   return (
-    <div className="flex justify-between ">
+    <div className="flex justify-between lg:py-4">
       <div
-        className={`fixed  backdrop-blur-md top-0 left-0  w-full border-b border-opacity-20 border-b-yellow-400
-      lg:py-1 lg:backdrop-blur-sm `}
+        className={`fixed backdrop-blur-md top-0 left-0  w-full border-b 
+        border-opacity-20 border-b-yellow-400 lg:py-4 lg:backdrop-blur-sm `}
       >
-        <div className="px-5  lg:px-8 xl:px-10 max-lg:py-4">
-          <a className="block text-2xl font-thin  xl:mr-8" href="#hero">
+        <div className="px-5 lg:px-8 xl:px-10 max-lg:py-4">
+          <a
+            className="block text-2xl  lg:text-2xl font-thin xl:text-3xl xl:mr-8"
+            href="#hero"
+          >
             Travelling <span className="text-yellow-500 font-normal">NEMO</span>
           </a>
         </div>
       </div>
       <nav
         className={`${openNavigation ? "flex" : "hidden"}  fixed top-0 left-0 
-        right-0 bottom-0 lg:ml-auto lg:static lg:flex  `}
+        right-0 bottom-0 lg:ml-auto lg:static lg:flex `}
       >
-        <div className="relative z-2 flex flex-col items-center  justify-center m-auto lg:flex-row">
+        <div
+          onClick={handleClick}
+          className={`relative z-2 flex flex-col items-center justify-center 
+        gap-5 m-auto lg:flex-row ${
+          openNavigation &&
+          "bg-white bg-opacity-20 backdrop-blur-lg mt-12 w-full h-full "
+        }`}
+        >
           {navigationData.map((item) => (
             <a
-              className={`block relative  font-thin text-center text-3xl tracking-wide px-20 py-2
-              transition-colors hover:text-yellow-500 
-              lg:text-base lg:pt-0 lg:mx-4 lg:p-0
-               ${item.url === pathname.hash ? "text-yellow-500" : ""}
+              className={`block relative  font-thin text-center text-3xl lg:text-xl xl:text-2xl
+               tracking-wide px-20 py-2 transition-colors hover:text-yellow-500 
+               lg:pt-0 lg:mx-4 lg:p-0 
+               ${
+                 item.url === pathname.hash
+                   ? "text-yellow-500 underline underline-offset-4 "
+                   : ""
+               }
                ${item.onlyMobile && "lg:hidden"}
                `}
               key={item.id}
@@ -82,7 +96,7 @@ export default Header;
 const SmallDevicesMenu = ({ onClick, openNavigation }) => {
   return (
     <div
-      className={`absolute top-6 right-14  lg:hidden cursor-pointer 
+      className={`absolute top-6 right-14 bg-white   lg:hidden cursor-pointer 
       ${openNavigation ? " -mt-2" : ""}`}
       onClick={onClick}
     >
