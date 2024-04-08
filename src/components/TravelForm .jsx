@@ -115,10 +115,7 @@ const TravelForm = () => {
             </div>
           ))}
         </div>
-        <a
-          className="bg-yellow-500 w-10 lg:hidden rounded-3xl"
-          href="#review"
-        />
+        <a className="bg-yellow-500 w-1 lg:hidden rounded-3xl" href="#review" />
       </div>
     </section>
   );
