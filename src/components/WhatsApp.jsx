@@ -12,8 +12,8 @@ const WhatsAppButton = () => {
 
   return (
     <div
-      className="fixed bottom-8 right-8 bg-yellow-500 text-white w-12 h-12 rounded-full 
-      flex justify-center items-center cursor-pointer"
+      className="fixed bottom-4 right-4 bg-yellow-500 bg-opacity-80 text-white w-12 h-12 rounded-full 
+      flex justify-center items-center cursor-pointer hover:bg-opacity-100"
       onClick={handleClick}
     >
       <AiOutlineWhatsApp className="text-3xl" />

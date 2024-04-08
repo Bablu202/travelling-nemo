@@ -43,7 +43,10 @@ const TravelForm = () => {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full px-3 py-2 border rounded-md"
+              className="w-full text-xl font-light border rounded-md 
+              appearance-none block  bg-yellow-500 bg-opacity-30 
+               border-yellow-500  py-3 px-4 leading-tight focus:outline-none
+                focus:bg-white focus:border-yellow-500"
             />
           </div>
           <div className="mb-4">
@@ -57,7 +60,10 @@ const TravelForm = () => {
               value={formData.mobileNumber}
               onChange={handleChange}
               required
-              className="w-full px-3 py-2 border rounded-md"
+              className="w-full text-xl font-bold border rounded-md 
+              appearance-none block  bg-yellow-500 bg-opacity-30 
+               border-yellow-500  py-3 px-4 leading-tight focus:outline-none
+                focus:bg-white focus:border-yellow-500"
             />
           </div>
           <div className="mb-4">
@@ -71,7 +77,10 @@ const TravelForm = () => {
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full px-3 py-2 border rounded-md"
+              className="w-full text-xl font-bold border rounded-md 
+              appearance-none block  bg-yellow-500 bg-opacity-30 
+               border-yellow-500  py-3 px-4 leading-tight focus:outline-none
+                focus:bg-white focus:border-yellow-500"
             />
           </div>
           <div className="mb-4">
@@ -85,7 +94,10 @@ const TravelForm = () => {
               value={formData.dob}
               onChange={handleChange}
               required
-              className="w-full px-3 py-2 border rounded-md"
+              className="w-full text-xl font-light border rounded-md 
+              appearance-none block  bg-yellow-500 bg-opacity-30 
+               border-yellow-500  py-3 px-4 leading-tight focus:outline-none
+                focus:bg-white focus:border-yellow-500"
             />
           </div>
           <button
