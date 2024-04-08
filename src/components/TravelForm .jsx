@@ -102,7 +102,8 @@ const TravelForm = () => {
           </div>
           <button
             type="submit"
-            className="w-full bg-yellow-500 text-white py-2 rounded-md hover:bg-yellow-500"
+            className="w-full bg-yellow-500 text-xl font-bold text-white py-2 rounded-md 
+             hover:bg-yellow-600 "
           >
             Submit
           </button>
