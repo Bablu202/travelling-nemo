@@ -8,7 +8,7 @@ const LandingPage = () => {
     "https://i.ibb.co/XXR8kzF/3.png",
     "https://i.ibb.co/yg7BSdM/4.png",
   ];
-  const [filteredContent] = landingPageTitles.filter((obj) => obj.id === "2");
+  const [filteredContent] = landingPageTitles.filter((obj) => obj.id === "1");
   return (
     <>
       <div className="flex flex-col justify-center mt-14 lg:mt-5 lg:flex-row ">
