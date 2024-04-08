@@ -48,7 +48,7 @@ const Header = () => {
           className={`relative z-2 flex flex-col items-center justify-center 
         gap-5 m-auto lg:flex-row ${
           openNavigation &&
-          "bg-white bg-opacity-20 backdrop-blur-lg mt-12 w-full h-full "
+          "bg-yellow-500 bg-opacity-20 backdrop-blur-lg w-full h-full "
         }`}
         >
           {navigationData.map((item) => (

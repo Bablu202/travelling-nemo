@@ -5,6 +5,7 @@ import LandingPage from "./components/LandingPage";
 import RatingAndReview from "./components/RatingAndReview ";
 import TravelForm from "./components/TravelForm ";
 import TripsPage from "./components/TripsPage";
+import WhatsAppButton from "./components/WhatsApp";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <AboutNemoPage />
       <TravelForm />
       <RatingAndReview />
+      <WhatsAppButton />
       <Footer />
     </div>
   );
