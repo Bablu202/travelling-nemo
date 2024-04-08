@@ -28,7 +28,7 @@ const TravelForm = () => {
   };
 
   return (
-    <section className="px-5 flex flex-col lg:flex-row">
+    <section className="px-5 flex flex-col lg:flex-row" id="contact">
       <div className="container max-w-md mx-atuo  lg:mr-auto mb-8">
         <h2 className="text-2xl font-bold text-center mb-4">Travel Form</h2>
         <form onSubmit={handleSubmit}>
@@ -97,19 +97,28 @@ const TravelForm = () => {
         </form>
       </div>
       {/* faqs */}
-      <div
-        className="container -ml-8 lg:mx-auto px-4 py-8 overflow-y-auto "
-        style={{ maxHeight: "80vh" }}
-      >
-        <h3 className="text-xl font-semibold mb-2">
-          Frequently asked questions..
-        </h3>
-        {faqs.map((faq) => (
-          <div key={faq.id} className="bg-white rounded-lg shadow-lg p-6 mb-4">
-            <h3 className="text-lg font-semibold mb-2">{faq.question}</h3>
-            <p className="text-gray-600">{faq.answer}</p>
-          </div>
-        ))}
+      <div className="flex flex-row" id="faqs">
+        <div
+          className="container -ml-8 lg:mx-auto px-4 py-8 overflow-y-auto "
+          style={{ maxHeight: "80vh" }}
+        >
+          <h3 className="text-xl font-semibold mb-2">
+            Frequently asked questions..
+          </h3>
+          {faqs.map((faq) => (
+            <div
+              key={faq.id}
+              className="bg-white rounded-lg shadow-lg p-6 mb-4"
+            >
+              <h3 className="text-lg font-semibold mb-2">{faq.question}</h3>
+              <p className="text-gray-600">{faq.answer}</p>
+            </div>
+          ))}
+        </div>
+        <a
+          className="bg-yellow-500 w-10 lg:hidden rounded-3xl"
+          href="#review"
+        />
       </div>
     </section>
   );
