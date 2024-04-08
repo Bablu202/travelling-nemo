@@ -9,7 +9,7 @@ import WhatsAppButton from "./components/WhatsApp";
 
 const App = () => {
   return (
-    <div className="border m-[1px] border-yellow-500 border-opacity-20">
+    <div className="border p-[2px] m-[2px] border-yellow-500 border-opacity-40">
       <Header />
       <LandingPage />
       <TripsPage />
