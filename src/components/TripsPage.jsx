@@ -30,7 +30,7 @@ const TripsPage = () => {
                   <strong>Status:</strong> {trip.status}
                 </p>
                 <p>
-                  <strong>Price:</strong> ${trip.price}
+                  <strong>Price:</strong> {trip.price} K
                 </p>
               </div>
             </div>

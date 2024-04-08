@@ -36,7 +36,8 @@ export const navigationData = [
 export const upcomingTripDetails = [
   {
     id: "1",
-    image: "/src/assets/trip/trip-1.jpg",
+    image:
+      "https://unsplash.com/photos/xyE1p1rG04U/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzEyNTc2NzY4fA&force=true",
     title: "Nepal",
     startDate: "02.06.2024",
     returnDate: "06.06.2024",
@@ -46,7 +47,8 @@ export const upcomingTripDetails = [
   },
   {
     id: "2",
-    image: "/src/assets/trip/trip-1.jpg",
+    image:
+      "https://unsplash.com/photos/7h7NCXp9eZ0/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8NHx8bm9ydGglMjBpbmRpYXxlbnwwfHx8fDE3MTI1Njg3NTJ8MA&force=true",
     title: "Lucknow",
     startDate: "02.06.2024",
     returnDate: "08.06.2024",
@@ -56,7 +58,8 @@ export const upcomingTripDetails = [
   },
   {
     id: "3",
-    image: "/src/assets/trip/trip-1.jpg",
+    image:
+      "https://unsplash.com/photos/29ezCWtMtnM/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8Mnx8S2VyYWxhfGVufDB8fHx8MTcxMjU2NDE2NHww&force=true",
     title: "Kerala",
     startDate: "18.07.2024",
     returnDate: "21.07.2024",
@@ -66,10 +69,33 @@ export const upcomingTripDetails = [
   },
   {
     id: "4",
-    image: "/src/assets/trip/trip-1.jpg",
+    image:
+      "https://unsplash.com/photos/dNEB_IfFyVk/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MXx8TGFrc2hhZHdlZXB8ZW58MHx8fHwxNzEyNDk2MzE1fDA&force=true",
+    title: "Lakshadweep",
+    startDate: "12.06.2024",
+    returnDate: "15.06.2024",
+    duration: "3 days",
+    status: "around 22 slots are free",
+    price: "36",
+  },
+  {
+    id: "5",
+    image:
+      "https://unsplash.com/photos/t4i7tO0SXjY/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8Mnx8Y2hlbm5haSUyMGNpdHl8ZW58MHx8fHwxNzEyNTEzMDUwfDA&force=true",
+    title: "Chenni",
+    startDate: "18.08.2024",
+    returnDate: "21.08.2024",
+    duration: "3 days",
+    status: "around 22 slots are free",
+    price: "36",
+  },
+  {
+    id: "6",
+    image:
+      "https://unsplash.com/photos/FHu3leOYDQs/download?ixid=M3wxMjA3fDB8MXxhbGx8Mjl8fHx8fHwyfHwxNzEyNTc3NjU3fA&force=true",
     title: "Goa",
-    startDate: "22.08.2024",
-    returnDate: "25.08.2024",
+    startDate: "22.09.2024",
+    returnDate: "25.09.2024",
     duration: "3 days",
     status: "around 30 slots are free",
     price: "18",
