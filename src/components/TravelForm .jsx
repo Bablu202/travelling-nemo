@@ -121,10 +121,10 @@ const TravelForm = () => {
           {faqs.map((faq) => (
             <div
               key={faq.id}
-              className="bg-white rounded-lg shadow-lg p-6 mb-4"
+              className="border border-yellow-500 rounded-lg shadow-lg p-6 mb-4"
             >
-              <h3 className="text-lg font-semibold mb-2">{faq.question}</h3>
-              <p className="text-gray-600">{faq.answer}</p>
+              <h3 className="text-lg font-semibold mb-2 ">{faq.question}</h3>
+              <p className="">{faq.answer}</p>
             </div>
           ))}
         </div>

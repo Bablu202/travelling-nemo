@@ -6,19 +6,22 @@ import RatingAndReview from "./components/RatingAndReview ";
 import TravelForm from "./components/TravelForm ";
 import TripsPage from "./components/TripsPage";
 import WhatsAppButton from "./components/WhatsApp";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const App = () => {
   return (
-    <div className="border p-[2px] m-[2px] border-yellow-500 border-opacity-40">
-      <Header />
-      <LandingPage />
-      <TripsPage />
-      <AboutNemoPage />
-      <TravelForm />
-      <RatingAndReview />
-      <WhatsAppButton />
-      <Footer />
-    </div>
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+      <div className="border p-[2px] m-[2px] border-yellow-500 border-opacity-40">
+        <Header />
+        <LandingPage />
+        <TripsPage />
+        <AboutNemoPage />
+        <TravelForm />
+        <RatingAndReview />
+        <WhatsAppButton />
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 };
 

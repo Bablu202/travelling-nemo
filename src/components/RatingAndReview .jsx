@@ -1,8 +1,13 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { getRegisteredDetails } from "@/services/apiRegistration";
 
 const RatingAndReview = () => {
   const [rating, setRating] = useState(0);
   const [review, setReview] = useState("");
+
+  useEffect(function () {
+    getRegisteredDetails().then((data) => console.log(data));
+  }, []);
 
   const handleRatingChange = (value) => {
     setRating(value);
