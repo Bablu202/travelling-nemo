@@ -70,7 +70,7 @@ const Header = () => {
             </a>
           ))}
         </div>
-      </nav>{" "}
+      </nav>
       <SmallDevicesMenu
         onClick={toggleNavigation}
         openNavigation={openNavigation}
@@ -95,23 +95,23 @@ export default Header;
 
 const SmallDevicesMenu = ({ onClick, openNavigation }) => {
   return (
-    <button
-      className={`absolute top-6 right-14 bg-white   lg:hidden cursor-pointer 
+    <div
+      className={`absolute top-6 right-14 bg-white z-10  w-10 h-5 lg:hidden cursor-pointer 
       ${openNavigation ? " -mt-2" : ""}`}
       onClick={onClick}
     >
       <div
-        className={`fixed border border-yellow-500 w-10 
+        className={` fixed border border-yellow-500 w-10 
       transition-all ${openNavigation ? "rotate-45 mt-4" : ""} `}
       />
       <div
-        className={`fixed border border-yellow-500 w-10  mt-2 
+        className={` fixed border border-yellow-500 w-10  mt-2 
        transition-all ${openNavigation ? "hidden" : ""}`}
       />
       <div
-        className={`fixed border border-yellow-500 w-10  mt-4
+        className={` fixed border border-yellow-500 w-10  mt-4
        transition-all ${openNavigation ? "-rotate-45 mt-2" : ""}`}
       />
-    </button>
+    </div>
   );
 };
