@@ -96,7 +96,7 @@ export default Header;
 const SmallDevicesMenu = ({ onClick, openNavigation }) => {
   return (
     <div
-      className={`absolute top-6 right-14  z-10  w-10 h-5 lg:hidden cursor-pointer 
+      className={`absolute top-6 right-4  z-10   w-10 h-5 lg:hidden cursor-pointer 
       ${openNavigation ? " -mt-2" : ""}`}
       onClick={onClick}
     >
