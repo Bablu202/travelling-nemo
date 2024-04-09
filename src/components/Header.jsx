@@ -53,7 +53,7 @@ const Header = () => {
         >
           {navigationData.map((item) => (
             <a
-              className={`block relative  font-thin text-center text-3xl lg:text-xl xl:text-2xl
+              className={`block relative  font-bold text-center  text-4xl lg:font-thin lg:text-xl xl:text-2xl
                tracking-wide px-20 py-2 transition-colors hover:text-yellow-500 
                lg:pt-0 lg:mx-4 lg:p-0 
                ${
